@@ -2,295 +2,390 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Blog de investigación sobre trabajo sexual, vulnerabilidad económica, violencia y derechos de mujeres adultas en Colombia." />
-  <title>Trabajo sexual en Colombia | Investigación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090c10" />
+  <meta name="description" content="Presentación interactiva del proyecto Esquivar el R" />
+  <title>Esquivar el R · Presentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-stars" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="#inicio" aria-label="Inicio">
-        <span class="brand-mark">TS</span>
-        <span class="brand-text">TRABAJO SEXUAL<br><small>COLOMBIA</small></span>
-      </a>
-
-      <button class="menu-btn" aria-expanded="false" aria-controls="nav-menu">☰</button>
-
-      <nav id="nav-menu" class="nav-menu" aria-label="Navegación principal">
-        <a href="#investigacion">Investigación</a>
-        <a href="#datos">Datos</a>
-        <a href="#derechos">Derechos</a>
-        <a href="#ecosistemas">Ecosistemas visuales</a>
-        <a href="#fuentes">Fuentes</a>
-      </nav>
-
-      <a class="cta" href="#investigacion">Leer investigación</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mini">UPTC · INVESTIGACIÓN-CREACIÓN</span>
+      <strong>ESQUIVAR EL R</strong>
     </div>
+    <nav class="topnav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#euler">Euler</a>
+      <a href="#registro">Registro</a>
+      <a href="#metodologia">Metodología</a>
+      <a href="#juego">Juego</a>
+      <a href="#miguel">Miguel</a>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="sideNav">☰</button>
   </header>
 
-  <main id="contenido">
-    <section id="inicio" class="hero shell">
-      <p class="eyebrow">INVESTIGACIÓN · COLOMBIA</p>
-      <p class="eyebrow">ESTHEFANNY DANIELA SANCHEZ ARIAS</p>
-      <div class="hero-grid">
-        <div>
-          <h1>Trabajo sexual en Colombia: vulnerabilidad económica, violencia y derechos</h1>
-          <p class="lead">Una mirada dirigida a la gente del común, sin morbo ni juicios fáciles, sobre las trayectorias de mujeres adultas vinculadas al trabajo sexual y los contextos que atraviesan sus decisiones.</p>
+  <aside id="sideNav" class="side-nav" aria-label="Mapa de presentación">
+    <div class="side-head">
+      <span>MAPA / NIVELES</span>
+      <strong>Presentación</strong>
+    </div>
+    <a href="#inicio" class="nav-node is-active"><span>00</span> Portada</a>
+    <a href="#euler" class="nav-node"><span>01</span> Euler · Introducción</a>
+    <a href="#antecedentes" class="nav-node"><span>02</span> Euler · Antecedentes</a>
+    <a href="#problema" class="nav-node"><span>03</span> Euler · Problema y objetivos</a>
+    <a href="#registro" class="nav-node"><span>04</span> Registro fotográfico</a>
+    <a href="#metodologia" class="nav-node"><span>05</span> Andrés · Metodología</a>
+    <a href="#juego" class="nav-node"><span>06</span> Andrés · Explicación del juego</a>
+    <a href="#cronograma" class="nav-node"><span>07</span> Miguel · Cronograma</a>
+    <a href="#presupuesto" class="nav-node"><span>08</span> Miguel · Presupuesto</a>
+    <a href="#conclusiones" class="nav-node"><span>09</span> Miguel · Conclusiones</a>
+  </aside>
+
+  <main class="snap-wrapper">
+    <section id="inicio" class="panel hero panel--dark">
+      <div class="panel-inner hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">OBRA DIGITAL · PRESENTACIÓN INTERACTIVA</p>
+          <h1>ESQUIVAR <span>EL R</span></h1>
+          <p class="hero-subtitle">Investigación-creación sobre movilidad cotidiana, percepción del riesgo e intervención digital en la entrada Rafael Azula de la UPTC.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#investigacion">Empezar a leer</a>
-            <a class="button ghost" href="#ecosistemas">Ver contenidos visuales</a>
+            <a href="#euler" class="btn btn-primary">INICIAR RECORRIDO</a>
+            <button id="themePulse" class="btn btn-secondary">ACTIVAR INTERFAZ</button>
+          </div>
+          <div class="hero-quote card card--paper">
+            <strong>"Cruzar una entrada no debería sentirse como pasar un nivel"</strong>
+            <p>La presentación adopta estética de videojuego para que la forma de exponer dialogue con la obra misma.</p>
           </div>
         </div>
-        <aside class="hero-note">
-          <span>Pregunta central</span>
-          <p>¿Cómo influyen las condiciones de vulnerabilidad económica y las experiencias de violencia en trayectorias de mujeres vinculadas al trabajo sexual?</p>
-        </aside>
-      </div>
-    </section>
 
-    <section class="news shell" aria-label="Contenido destacado">
-      <div class="news-grid">
-        <article class="featured searchable" data-search="trabajo sexual mapa dinero violencia consecuencias sociedad relaciones contexto colombia">
-          <img src="assets/mapa-mental.png" alt="Mapa mental sobre trabajo sexual: dinero, violencia, consecuencias, sociedad, relaciones y contexto" />
-          <div class="featured-body">
-            <span class="tag">ANÁLISIS CENTRAL</span>
-            <h3>Más que una sola historia: seis dimensiones que se cruzan</h3>
-            <p>El punto de partida de esta investigación relaciona dinero, violencia, consecuencias, sociedad, relaciones y contexto. La intención no es afirmar que todas las mujeres viven lo mismo, sino observar cómo esas dimensiones pueden combinarse de maneras diferentes.</p>
-            <a href="#investigacion">Leer el análisis →</a>
+        <div class="hero-stage">
+          <div class="island">
+            <div class="island-road"></div>
+            <div class="island-gate"></div>
+            <div class="island-bridge"></div>
+            <div class="island-park park-1"></div>
+            <div class="island-park park-2"></div>
+            <div class="island-bike bike-1"></div>
+            <div class="island-bike bike-2"></div>
+            <div class="island-bike bike-3"></div>
+            <div class="island-player"></div>
+            <div class="island-label gate">PORTERÍA</div>
+            <div class="island-label bridge">PUENTE</div>
+            <div class="island-label road">VÍA</div>
           </div>
-        </article>
+          <div class="hud-mock">
+            <div><span>NIVEL</span><strong>R-01</strong></div>
+            <div><span>ESTADO</span><strong>EN CURSO</strong></div>
+            <div><span>ENTORNO</span><strong>PEATONES / MOTOS</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-hint">Desliza o usa el menú para avanzar</div>
+    </section>
 
-        <div class="post-list" id="post-list">
-          <article class="post-item searchable" data-search="manizales ingresos salario educación salud universidad caldas 2024">
-            <div>
-              <span class="tag">DATOS · MANIZALES</span>
-              <h3><a href="#datos">131 participantes: qué muestra —y qué no— un estudio de 2024</a></h3>
-              <p>Ingresos, educación y afiliación en salud ayudan a dimensionar la vulnerabilidad económica en una muestra local.</p>
-            </div>
-            <time datetime="2024">2024</time>
+    <section id="euler" class="panel">
+      <div class="panel-inner two-col">
+        <div class="section-title-block">
+          <p class="eyebrow">NIVEL 01 · EULER NIETO</p>
+          <h2>Introducción y enfoque del proyecto</h2>
+          <p class="lead">La Entrada del R es uno de los accesos de mayor uso de la sede central. Allí coinciden peatones, motos, bicicletas, torniquetes, puente, estacionamiento y cambios de flujo a distintas horas.</p>
+        </div>
+        <div class="card-stack">
+          <article class="card card--glass">
+            <h3>¿De dónde surge?</h3>
+            <p>De una acción cotidiana: <strong>atravesar el lugar</strong>. El proyecto observa cómo las personas cambian su trayectoria, ceden el paso, se detienen o aceleran para resolver un cruce complejo en pocos segundos.</p>
           </article>
-
-          <article class="post-item searchable" data-search="bogota violencia mujeres actividades sexuales pagadas 42 88.2">
-            <div>
-              <span class="tag">DATOS · BOGOTÁ</span>
-              <h3><a href="#datos">La violencia aparece con fuerza en la caracterización distrital</a></h3>
-              <p>Las cifras de Bogotá permiten hablar del problema con mayor precisión, sin convertir una ciudad en sinónimo de todo el país.</p>
-            </div>
-            <time datetime="2025">2025</time>
+          <article class="card card--accent">
+            <h3>Propuesta artística</h3>
+            <p>Se plantea un entorno virtual para celular donde el participante recorre una versión simplificada de la Entrada del R y <strong>esquiva motocicletas, personas con afán y acumulaciones</strong>.</p>
           </article>
-
-          <article class="post-item searchable" data-search="tunja tribunal perímetro prostitución ley 1801 84 2020">
-            <div>
-              <span class="tag">TERRITORIO · TUNJA</span>
-              <h3><a href="#tunja">El perímetro de impacto: una orden judicial de 2020</a></h3>
-              <p>El caso ayuda a distinguir entre ordenamiento urbano y medidas de convivencia.</p>
-            </div>
-            <time datetime="2020">2020</time>
-          </article>
-
-          <article class="post-item searchable" data-search="youtube wrong route santa fe bogota video paisaje urbano estigma">
-            <div>
-              <span class="tag">VIDEO · LECTURA VISUAL</span>
-              <h3><a href="#ecosistemas">“Wrong Route”: mirar una zona estigmatizada sin convertirla en espectáculo</a></h3>
-              <p>Una lectura del espacio urbano, sus ritmos, su deterioro y la vida cotidiana que persiste dentro de él.</p>
-            </div>
-            <time>Video</time>
+          <article class="card card--outline">
+            <h3>Enfoque</h3>
+            <p>La investigación-creación integra revisión documental, observación, registro fotográfico y prototipado, sin separar la parte investigativa de la creación artística.</p>
           </article>
         </div>
       </div>
-      <p id="search-status" class="search-status" aria-live="polite"></p>
     </section>
 
-    <section id="investigacion" class="section shell two-col">
-      <div>
-        <p class="eyebrow">01 · INVESTIGACIÓN</p>
-        <h2>¿Por qué investigar este tema?</h2>
-        <p>En Colombia, el trabajo sexual suele aparecer en la conversación pública desde la moral, la seguridad, la salud o el escándalo. Esa mirada puede borrar la diversidad de trayectorias personales y dejar por fuera preguntas más difíciles: ¿qué papel juegan los ingresos, el cuidado familiar, el acceso a educación y salud, la discriminación o las experiencias de violencia?</p>
-        <p>Este blog parte de una idea sencilla: <strong>no todas las mujeres llegan ni permanecen en el trabajo sexual por las mismas razones</strong>. La necesidad económica puede ser decisiva para algunas; para otras también pesan la autonomía, oportunidades laborales limitadas, redes familiares, migración, discriminación o experiencias previas de violencia. Investigar exige sostener esas diferencias sin romantizar la actividad ni reducir a las personas a la condición de víctimas.</p>
-      </div>
-      <div class="quote-card">
-        <p>“Hablar de vulnerabilidad no significa asumir que todas las decisiones son forzadas; significa preguntar qué tan amplias o estrechas son las opciones disponibles.”</p>
-        <span>Idea guía de la investigación</span>
-      </div>
-    </section>
-
-    <section id="datos" class="section alt">
-      <div class="shell">
-        <p class="eyebrow">02 · DATOS CON CONTEXTO</p>
-        <h2>Cifras útiles, pero sin convertirlas en una verdad nacional</h2>
-        <p class="section-intro">Las cifras disponibles suelen provenir de ciudades o muestras específicas. Por eso cada dato de esta página indica a qué población corresponde.</p>
-
-        <div class="stat-grid">
-          <article class="stat-card searchable" data-search="96.9 ingresos salario mínimo manizales 131">
-            <strong>96,9%</strong>
-            <h3>reportó ingresos inferiores a un salario mínimo mensual</h3>
-            <p>Estudio de 2024 con 131 trabajadoras sexuales cisgénero y transgénero de Manizales. Muestreo por bola de nieve.</p>
-            <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9709547" target="_blank" rel="noopener">Fuente académica ↗</a>
+    <section id="antecedentes" class="panel panel--dark">
+      <div class="panel-inner">
+        <div class="section-title-block wide">
+          <p class="eyebrow">NIVEL 02 · EULER NIETO</p>
+          <h2>Antecedentes y transformación del acceso</h2>
+          <p class="lead">La Entrada del R no es una infraestructura hecha de una sola vez: ha cambiado por obras, reglamentaciones, condiciones jurídicas y variaciones de uso.</p>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <span class="year">1998</span>
+            <h3>Edificio Rafael Azula</h3>
+            <p>Su construcción antecede a la portería actual y da nombre al sector.</p>
           </article>
-
-          <article class="stat-card searchable" data-search="29.8 educación primaria manizales">
-            <strong>29,8%</strong>
-            <h3>había alcanzado únicamente educación primaria</h3>
-            <p>La educación apareció como uno de los determinantes sociales asociados con mayor inequidad en esa misma muestra.</p>
-            <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9709547" target="_blank" rel="noopener">Fuente académica ↗</a>
+          <article class="timeline-card">
+            <span class="year">2012–2013</span>
+            <h3>Puente y accesos</h3>
+            <p>Se desarrollan estudios de movilidad, se construye el puente y se consolida la caseta de control peatonal y vehicular.</p>
           </article>
-
-          <article class="stat-card searchable" data-search="15 salud afiliación manizales">
-            <strong>15%</strong>
-            <h3>no estaba afiliado a salud</h3>
-            <p>El resultado pertenece a la muestra de Manizales y no debe extrapolarse automáticamente al conjunto de Colombia.</p>
-            <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9709547" target="_blank" rel="noopener">Fuente académica ↗</a>
+          <article class="timeline-card">
+            <span class="year">2014–2015</span>
+            <h3>Estudios y auditoría</h3>
+            <p>Se registra un volumen importante de viajes por Rafael Azula y se advierte el conflicto entre trayectorias peatonales y vehiculares.</p>
           </article>
-
-          <article class="stat-card searchable" data-search="42 violencia bogotá 88.2 mujeres 2025">
-            <strong>42%</strong>
-            <h3>reportó haber sufrido algún tipo de violencia en Bogotá</h3>
-            <p>La caracterización distrital más reciente citada por la Secretaría de la Mujer también indicó que el 88,2% de las personas caracterizadas eran mujeres.</p>
-            <a href="https://bogota.gov.co/mi-ciudad/mujer/son-mas-las-mujeres-que-hacen-actividades-sexuales-pagadas-en-bogota" target="_blank" rel="noopener">Fuente oficial ↗</a>
+          <article class="timeline-card">
+            <span class="year">2017–2018</span>
+            <h3>Política de acceso</h3>
+            <p>La portería queda como ingreso de peatones, motocicletas y bicicletas; además se concentra allí el parqueo de motos.</p>
+          </article>
+          <article class="timeline-card">
+            <span class="year">2021–2023</span>
+            <h3>Servidumbre y expansión de uso</h3>
+            <p>La conexión con la carrera 12 se apoya en una servidumbre; luego se habilita formalmente el paso para motos y vehículos de emergencia.</p>
+          </article>
+          <article class="timeline-card">
+            <span class="year">2024–2026</span>
+            <h3>Gestión y control</h3>
+            <p>Se siguen discutiendo mejoras del acceso y se implementan sistemas de control institucional como reconocimiento facial y lectura de tarjetas.</p>
           </article>
         </div>
-
       </div>
     </section>
 
-    <section id="derechos" class="section shell">
-      <p class="eyebrow">03 · DERECHOS Y MARCO LEGAL</p>
-      <h2>Trabajo sexual, explotación sexual y trata no son lo mismo</h2>
-      <div class="legal-grid">
-        <article class="legal-card">
-          <span>01</span>
-          <h3>Ejercicio de la prostitución</h3>
-          <p>La Ley 1801 de 2016 señala que el ejercicio de la prostitución, por sí solo, no da lugar a medidas correctivas por perturbación de la convivencia. La misma norma reconoce condiciones de especial vulnerabilidad frente a trata, explotación sexual y otras violencias.</p>
-        </article>
-        <article class="legal-card">
-          <span>02</span>
-          <h3>Coacción y explotación</h3>
-          <p>Obligar, retener, engañar, explotar o involucrar menores de edad pertenece a un terreno jurídico distinto. Este blog se concentra en personas adultas y diferencia el trabajo sexual voluntario de la explotación sexual y la trata de personas.</p>
-        </article>
-        <article class="legal-card">
-          <span>03</span>
-          <h3>Derechos laborales y no discriminación</h3>
-          <p>La jurisprudencia constitucional ha reconocido que las personas que ejercen prostitución han sufrido discriminación histórica y pueden requerir especial protección. La sentencia T-629 de 2010 es un referente en la discusión sobre derechos laborales en contextos de trabajo sexual.</p>
-        </article>
-      </div>
-      <div class="source-strip">
-        <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=80538" target="_blank" rel="noopener">Ley 1801 de 2016, arts. 42–46 y 84 ↗</a>
-        <a href="https://www.corteconstitucional.gov.co/relatoria/2022/t-310-22.htm" target="_blank" rel="noopener">Corte Constitucional, T-310 de 2022 ↗</a>
-      </div>
-    </section>
-
-    <section id="tunja" class="section alt">
-      <div class="shell tunja-grid">
+    <section id="problema" class="panel">
+      <div class="panel-inner two-col two-col--balanced">
         <div>
-          <p class="eyebrow">04 · TUNJA Y EL ESPACIO URBANO</p>
-          <h2>Un fallo de 2020 que muestra cómo se regula el territorio</h2>
-          <p>El Tribunal Administrativo de Boyacá confirmó en 2020 una decisión que ordenó al alcalde de Tunja presentar, en 25 días hábiles, un proyecto ante el Concejo Municipal para establecer el perímetro previsto en el artículo 84 de la Ley 1801 de 2016.</p>
-          <p>La discusión era concreta: el municipio sostenía que el POT ya regulaba usos del suelo, mientras el Tribunal explicó que el POT y el perímetro de impacto cumplen finalidades distintas. La norma nacional prohíbe que ciertas actividades económicas relacionadas con prostitución, juegos de azar y ruidos se desarrollen alrededor de hospitales, centros de salud, instituciones educativas y centros religiosos.</p>
-          <div class="note">La fuente compartida en el proyecto presenta el fallo como “reciente”; al verificar la decisión oficial, su fecha es <strong>25 de septiembre de 2020</strong>. En el blog se conserva el caso por su valor explicativo, pero se corrige el marco temporal.</div>
-          <a class="text-link" href="https://www.ramajudicial.gov.co/web/relatoria-tribunal-administrativo-de-boyaca./novedades/-/asset_publisher/e1FQwaZcVlhC/content/id/49585195" target="_blank" rel="noopener">Consultar la decisión del Tribunal ↗</a>
+          <p class="eyebrow">NIVEL 03 · EULER NIETO</p>
+          <h2>Problema, pregunta y objetivos</h2>
+          <div class="card card--paper dark-text">
+            <h3>Problema de investigación</h3>
+            <p>El problema se ubica en la experiencia cotidiana de cruzar un punto donde coinciden usuarios con <strong>velocidades, direcciones y propósitos distintos</strong>. El conflicto no está en un solo elemento, sino en la superposición de trayectorias en un mismo espacio.</p>
+          </div>
+          <div class="question-box">
+            <span class="question-tag">PREGUNTA</span>
+            <p>¿Cómo puede una intervención artística digital situada evidenciar los conflictos de movilidad cotidiana presentes en la Entrada del R de la UPTC?</p>
+          </div>
         </div>
-        <figure class="news-image-card">
-          <img src="assets/noticia-base.png" alt="Página de noticia del proyecto titulada Entre la necesidad y violencia: las historias detrás del trabajo sexual" />
-          <figcaption>Material editorial elaborado para la investigación y utilizado como base visual del blog.</figcaption>
-        </figure>
+        <div class="objective-side">
+          <article class="card card--glass">
+            <h3>Objetivo general</h3>
+            <p>Desarrollar una intervención artística digital situada que traduzca la experiencia de movilidad de la Entrada del R en una mecánica de juego orientada a visibilizar cruces, obstáculos y comportamientos normalizados durante el recorrido cotidiano.</p>
+          </article>
+          <article class="card card--outline">
+            <h3>Objetivos específicos</h3>
+            <ul class="check-list">
+              <li>Reconstruir antecedentes físicos, institucionales y de movilidad.</li>
+              <li>Registrar condiciones actuales en distintos horarios.</li>
+              <li>Organizar situaciones observadas en categorías de análisis.</li>
+              <li>Traducir los elementos seleccionados a reglas de juego.</li>
+              <li>Realizar pruebas situadas del prototipo.</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="ecosistemas" class="section shell">
-      <p class="eyebrow">05 · ECOSISTEMAS VISUALES</p>
-      <h2>Cómo cambia la mirada según el medio</h2>
-      <p class="section-intro">Una noticia, un recorrido audiovisual y un mapa mental no cuentan lo mismo. Cada formato selecciona qué mostrar, qué dejar fuera y desde dónde mirar.</p>
-
-      <div class="media-grid">
-        <article class="media-card searchable" data-search="diario boyaca tunja perímetro noticia">
-          <span class="tag">NOTICIA LOCAL</span>
-          <h3>El caso del perímetro de impacto en Tunja</h3>
-          <p>La noticia coloca el tema dentro de un conflicto de regulación urbana. Para la investigación, sirve para observar cómo el trabajo sexual también se discute desde el uso del suelo, la convivencia y la relación con colegios, centros de salud y espacios religiosos.</p>
-          <a href="https://eldiarioboyaca.com/alcaldia-de-tunja-debera-presentar-perimetro-para-actividades-de-prostitucion-y-juegos-de-azar/" target="_blank" rel="noopener">Abrir enlace del ecosistema ↗</a>
-        </article>
-
-        <article class="media-card searchable" data-search="wrong route santa fe video youtube">
-          <span class="tag">VIDEO / RECORRIDO</span>
-          <h3>“Wrong Route”: sostener la mirada</h3>
-          <p>El recorrido en primera persona puede leerse como un registro de desigualdad urbana: deterioro arquitectónico, comercio informal, tránsito, vigilancia y trabajo sexual conviven en un mismo paisaje. Su valor no está en convertir la zona en una curiosidad, sino en mostrar que allí existe vida cotidiana, trabajo, vínculos y supervivencia.</p>
-          <p class="small-note">Esta lectura es interpretativa: el video no reemplaza una encuesta, un estudio de campo ni el testimonio directo de las personas que aparecen.</p>
-          <a href="https://www.youtube.com/watch?v=yssWtXkpGbY&t=823s" target="_blank" rel="noopener">Ver video ↗</a>
-        </article>
-
-        <article class="media-card searchable" data-search="mapa mental dinero violencia sociedad relaciones consecuencias">
-          <span class="tag">MAPA MENTAL</span>
-          <h3>Una red de relaciones, no una causa única</h3>
-          <p>El mapa propone conexiones entre necesidad e ingresos; abuso, explotación y desigualdad; estigma y secuelas; intimidad, cliente, intercambio y consentimiento; además del contexto familiar, social y colombiano. Funciona como guía de preguntas para profundizar, no como conclusión cerrada.</p>
-          <a href="assets/mapa-mental.png" target="_blank" rel="noopener">Ver mapa completo ↗</a>
-        </article>
+    <section id="registro" class="panel panel--dark">
+      <div class="panel-inner">
+        <div class="section-title-block wide">
+          <p class="eyebrow">NIVEL 04 · EULER NIETO</p>
+          <h2>Registro fotográfico del lugar</h2>
+          <p class="lead">Las imágenes funcionan como evidencia del trabajo de campo y muestran la mezcla de circulación peatonal, condiciones de la vía y ocupación de motocicletas.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card reveal">
+            <img src="assets/images/image1.jpeg" alt="Entrada del R" />
+            <figcaption><strong>Figura 1.</strong> Entrada principal del R · 9 am.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/images/image2.jpeg" alt="Vía principal para el ingreso al R" />
+            <figcaption><strong>Figura 2.</strong> Entrada peatonal y vehicular en mal estado · 9 am.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/images/image3.jpeg" alt="Zona externa de la entrada del R" />
+            <figcaption><strong>Figura 3.</strong> Circulación mixta de estudiantes y motos · 3 pm.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/images/image4.jpeg" alt="Motocicletas estacionadas durante la noche" />
+            <figcaption><strong>Figura 4.</strong> Estacionamiento de motocicletas en suelo sin pavimentar · 6 pm.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal gallery-card--wide">
+            <img src="assets/images/image5.jpeg" alt="Disposición desordenada de las motocicletas" />
+            <figcaption><strong>Figura 5.</strong> Acumulación de motocicletas sin orden establecido · 6 pm a 7 pm.</figcaption>
+          </figure>
+        </div>
       </div>
+    </section>
 
-      <div class="video-block">
+    <section id="metodologia" class="panel">
+      <div class="panel-inner">
+        <div class="section-title-block wide">
+          <p class="eyebrow">NIVEL 05 · ANDRÉS GUERRERO</p>
+          <h2>Metodología</h2>
+          <p class="lead">La investigación adopta un enfoque cualitativo, situado y de investigación-creación. No pretende reemplazar un estudio de tránsito, sino describir una experiencia y traducirla al lenguaje del juego.</p>
+        </div>
+        <div class="method-top">
+          <article class="card card--paper dark-text">
+            <h3>Unidad de observación</h3>
+            <p>El recorrido analizado va desde la aproximación por la carrera 12 hasta el ingreso al campus: franja exterior, portería, torniquetes, zona de motos y puente.</p>
+          </article>
+          <article class="card card--glass">
+            <h3>Técnicas e instrumentos</h3>
+            <ul class="mini-list">
+              <li>Revisión documental</li>
+              <li>Observación directa no participante</li>
+              <li>Registro fotográfico en distintos horarios</li>
+              <li>Diario de campo breve</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="phase-grid">
+          <article class="phase-card"><span>Fase 1</span><h3>Revisión y reconstrucción documental</h3><p>Se reúnen fuentes institucionales y trabajos académicos para establecer la secuencia histórica del lugar.</p></article>
+          <article class="phase-card"><span>Fase 2</span><h3>Observación en diferentes horarios</h3><p>Se comparan mañanas, cambios de clase, tardes y noche para identificar variaciones de flujo, acumulación y circulación.</p></article>
+          <article class="phase-card"><span>Fase 3</span><h3>Organización y análisis del registro</h3><p>Las situaciones observadas se clasifican por tipo de obstáculo, lugar, horario, frecuencia aparente y efecto sobre la trayectoria.</p></article>
+          <article class="phase-card"><span>Fase 4</span><h3>Traducción al lenguaje del juego</h3><p>Las categorías pasan a reglas: motos como obstáculos móviles, personas con afán como agentes impredecibles y grupos como reducción del espacio.</p></article>
+          <article class="phase-card"><span>Fase 5</span><h3>Prototipado técnico</h3><p>Se desarrolla una primera versión funcional priorizando navegación, colisiones, legibilidad del escenario e interacción básica.</p></article>
+          <article class="phase-card"><span>Fase 6</span><h3>Pruebas situadas y ajustes</h3><p>Se revisa si la interfaz se entiende, si la obra se relaciona con el sitio y si la activación es segura para el usuario.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="juego" class="panel panel--dark">
+      <div class="panel-inner game-explain-layout">
+        <div class="section-title-block wide">
+          <p class="eyebrow">NIVEL 06 · ANDRÉS GUERRERO</p>
+          <h2>Explicación del juego / obra digital</h2>
+          <p class="lead">Esquivar el R es una intervención digital situada para dispositivos móviles. Se activa desde un enlace o código QR y convierte la experiencia de cruzar la entrada en una mecánica de juego crítica.</p>
+        </div>
+
+        <div class="game-ui-mock reveal">
+          <div class="game-frame">
+            <div class="game-lane lane-1"></div>
+            <div class="game-lane lane-2"></div>
+            <div class="game-lane lane-3"></div>
+            <div class="mock-obstacle moto"></div>
+            <div class="mock-obstacle person"></div>
+            <div class="mock-obstacle crowd"></div>
+            <div class="mock-player"></div>
+            <div class="mock-hud left">PERSONAS 08</div>
+            <div class="mock-hud right">RIESGO ALTO</div>
+            <div class="mock-objective">ESQUIVA Y AVANZA HASTA EL CAMPUS</div>
+          </div>
+        </div>
+
+        <div class="game-info-grid">
+          <article class="card card--glass">
+            <h3>Escenario</h3>
+            <p>El espacio virtual conserva referencias del lugar: portería, franja de tierra, torniquetes, puente y zona de motocicletas. No busca ser una copia exacta, sino una representación reconocible.</p>
+          </article>
+          <article class="card card--accent">
+            <h3>Obstáculos</h3>
+            <p><strong>Motocicletas:</strong> se mueven rápido o invaden el paso. <br><strong>Personas con afán:</strong> cambian de dirección o aceleran. <br><strong>Acumulaciones:</strong> reducen el ancho disponible.</p>
+          </article>
+          <article class="card card--outline">
+            <h3>Interfaz</h3>
+            <p>El diseño es simple: desplazamiento lateral, indicación del objetivo, recorrido corto, lectura rápida del entorno y activación localizada para mantener el vínculo con el sitio real.</p>
+          </article>
+          <article class="card card--paper dark-text">
+            <h3>Sentido crítico</h3>
+            <p>La obra no presenta culpables. Lo que vuelve visible es cómo el espacio obliga a negociar trayectorias, velocidades y tiempos de reacción en una situación que se ha normalizado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cronograma" class="panel">
+      <div class="panel-inner">
+        <div class="section-title-block wide">
+          <p class="eyebrow">NIVEL 07 · MIGUEL ÁNGEL MORENO</p>
+          <h2>Cronograma</h2>
+          <p class="lead">El trabajo se organiza en preproducción, producción, postproducción, montaje y evaluación de resultados.</p>
+        </div>
+        <div class="schedule-grid">
+          <div class="schedule-card"><span>25 sep – 27 sep</span><strong>Investigación</strong><p>Planteamiento de la problemática, contexto y antecedentes.</p></div>
+          <div class="schedule-card"><span>29 sep – 10 oct</span><strong>Desarrollo de la propuesta</strong><p>Pregunta problema, objetivos y resultados esperados.</p></div>
+          <div class="schedule-card"><span>15 oct – 18 oct</span><strong>Diseño 2D de assets</strong><p>Bocetos de personajes, objetos, interfaz e iconos.</p></div>
+          <div class="schedule-card"><span>24 oct – 26 oct</span><strong>Modelado 3D</strong><p>Construcción de recursos tridimensionales y materiales.</p></div>
+          <div class="schedule-card"><span>24 oct – 25 oct</span><strong>Efectos de sonido</strong><p>Búsqueda, edición y adaptación del ambiente sonoro.</p></div>
+          <div class="schedule-card"><span>30 oct – 06 nov</span><strong>Programación</strong><p>Lógica, mecánicas, interacción y condiciones de juego.</p></div>
+          <div class="schedule-card"><span>07 nov</span><strong>Beta cerrada</strong><p>Compilación de la primera versión funcional.</p></div>
+          <div class="schedule-card"><span>09 nov – 12 nov</span><strong>Testeo</strong><p>Pruebas con usuarios para detectar problemas y mejorar la experiencia.</p></div>
+          <div class="schedule-card"><span>13 nov – 14 nov</span><strong>Corrección de bugs</strong><p>Ajustes posteriores al testeo.</p></div>
+          <div class="schedule-card"><span>16 nov</span><strong>Lanzamiento</strong><p>Publicación de la versión final.</p></div>
+          <div class="schedule-card"><span>17 nov</span><strong>Montaje</strong><p>Instalación de códigos QR en la Entrada del R.</p></div>
+          <div class="schedule-card"><span>18 nov – 24 nov</span><strong>Evaluación</strong><p>Recopilación de estadísticas de uso y recepción del proyecto.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="presupuesto" class="panel panel--dark">
+      <div class="panel-inner two-col two-col--balanced">
         <div>
-          <span class="tag">LECTURA AUDIOVISUAL</span>
-          <h3>¿Qué mirar además de lo evidente?</h3>
-          <p>Arquitectura, iluminación, comercio, circulación, distancia entre cuerpos, vigilancia, sonidos, señalización y formas de ocupar la calle. Observar estos elementos permite hablar del espacio sin reducir a las personas a una etiqueta.</p>
+          <p class="eyebrow">NIVEL 08 · MIGUEL ÁNGEL MORENO</p>
+          <h2>Presupuesto</h2>
+          <p class="lead">El proyecto trabaja sobre todo con recursos ya disponibles, por lo que el gasto directo inicial es bajo.</p>
         </div>
-        <div class="video-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/yssWtXkpGbY?start=823" title="Video del ecosistema visual sobre el espacio urbano" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="budget-list">
+          <article class="budget-item">
+            <span class="budget-type">Recurso propio</span>
+            <h3>Computador portátil HP Victus 15</h3>
+            <p>Uso: programación, modelado, edición y documentación.</p>
+            <strong>$0</strong>
+          </article>
+          <article class="budget-item">
+            <span class="budget-type">Recurso propio</span>
+            <h3>Cámaras de celular</h3>
+            <p>Uso: registro fotográfico, audiovisual y pruebas móviles.</p>
+            <strong>$0</strong>
+          </article>
+          <article class="budget-item budget-item--highlight">
+            <span class="budget-type">Costo variable</span>
+            <h3>Transporte público</h3>
+            <p>Valor base: <strong>$2.600 por desplazamiento</strong>. El subtotal final depende del número de visitas y pruebas realizadas.</p>
+            <strong>$2.600 × número de desplazamientos</strong>
+          </article>
+          <article class="budget-item">
+            <span class="budget-type">Posibles costos posteriores</span>
+            <h3>Impresión / hosting / QR</h3>
+            <p>Solo se sumarían cuando estén definidos dentro de la fase de montaje y difusión.</p>
+            <strong>Por definir</strong>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="shell editorial-grid">
-        <div>
-          <p class="eyebrow">06 · UNA MIRADA SIN ESTIGMA</p>
-          <h2>Preguntas que este blog quiere dejar abiertas</h2>
+    <section id="conclusiones" class="panel">
+      <div class="panel-inner">
+        <div class="section-title-block wide">
+          <p class="eyebrow">NIVEL 09 · MIGUEL ÁNGEL MORENO</p>
+          <h2>Conclusiones provisionales</h2>
+          <p class="lead">El proyecto articula archivo, observación y juego para hacer visible una experiencia concreta de movilidad universitaria.</p>
         </div>
-        <div class="questions">
-          <p>¿Cuándo una necesidad económica se convierte en falta real de alternativas?</p>
-          <p>¿Cómo cambia una trayectoria cuando existe violencia previa o durante el ejercicio?</p>
-          <p>¿Qué barreras aparecen al buscar salud, empleo, educación o protección institucional?</p>
-          <p>¿Cómo influyen el estigma y la discriminación en las decisiones de permanecer, cambiar de actividad o pedir ayuda?</p>
-          <p>¿Qué cambia cuando escuchamos a las propias mujeres en vez de hablar únicamente sobre ellas?</p>
+        <div class="conclusion-grid">
+          <article class="conclusion-card"><span>01</span><p>La Entrada del R es el resultado de decisiones tomadas en momentos distintos: edificio, puente, portería, reglamentaciones, servidumbre y control de acceso.</p></article>
+          <article class="conclusion-card"><span>02</span><p>Los antecedentes muestran que el conflicto entre peatones y vehículos no es nuevo; la observación actual confirma que sigue presente bajo nuevas condiciones de uso.</p></article>
+          <article class="conclusion-card"><span>03</span><p>El trabajo de campo aporta información material y perceptiva: estado de la vía, cambios de flujo, parqueo de motos, iluminación y puntos de estrechamiento.</p></article>
+          <article class="conclusion-card"><span>04</span><p>La mecánica de esquivar permite transformar en regla una conducta cotidiana y volver visible una serie de decisiones que normalmente pasan desapercibidas.</p></article>
+        </div>
+        <div class="end-card card card--paper dark-text">
+          <h3>Cierre</h3>
+          <p>La siguiente etapa consiste en completar el registro por horarios, organizar la matriz de observación y consolidar una primera versión jugable que pueda probarse de forma segura en el sitio.</p>
         </div>
       </div>
-    </section>
-
-    <section id="fuentes" class="section shell sources">
-      <p class="eyebrow">07 · FUENTES Y LECTURAS</p>
-      <h2>De dónde sale la información</h2>
-      <p>La página combina el material de clase proporcionado para el proyecto con fuentes académicas y oficiales. Los datos locales se presentan con su ciudad y año para evitar generalizaciones.</p>
-
-      <div class="source-list">
-        <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9709547" target="_blank" rel="noopener">
-          <span>01</span>
-          <div><strong>Betancurth Loaiza et al. (2024)</strong><small>Equidad y trabajo sexual: un análisis a la luz de los determinantes sociales de la salud. Estudio con 131 participantes en Manizales.</small></div>
-        </a>
-        <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=80538" target="_blank" rel="noopener">
-          <span>02</span>
-          <div><strong>Ley 1801 de 2016</strong><small>Código Nacional de Seguridad y Convivencia Ciudadana: ejercicio de la prostitución, establecimientos y perímetro de impacto.</small></div>
-        </a>
-        <a href="https://www.corteconstitucional.gov.co/relatoria/2022/t-310-22.htm" target="_blank" rel="noopener">
-          <span>03</span>
-          <div><strong>Corte Constitucional, T-310 de 2022</strong><small>Recoge la evolución de la jurisprudencia constitucional sobre prostitución, dignidad, vulnerabilidad y no discriminación.</small></div>
-        </a>
-        <a href="https://www.ramajudicial.gov.co/web/relatoria-tribunal-administrativo-de-boyaca./novedades/-/asset_publisher/e1FQwaZcVlhC/content/id/49585195" target="_blank" rel="noopener">
-          <span>04</span>
-          <div><strong>Tribunal Administrativo de Boyacá (2020)</strong><small>Decisión sobre el perímetro de impacto de actividades económicas en Tunja.</small></div>
-        </a>
-        <a href="https://www.sdmujer.gov.co/sobre-nuestra-secretaria/politica-actividades-sexuales" target="_blank" rel="noopener">
-          <span>05</span>
-          <div><strong>Secretaría Distrital de la Mujer de Bogotá</strong><small>Política Pública de Actividades Sexuales Pagadas y enfoque de garantía de derechos.</small></div>
-        </a>
-        <a href="https://bogota.gov.co/mi-ciudad/mujer/son-mas-las-mujeres-que-hacen-actividades-sexuales-pagadas-en-bogota" target="_blank" rel="noopener">
-          <span>06</span>
-          <div><strong>Caracterización distrital citada en 2025</strong><small>Datos recientes de Bogotá sobre composición de la población caracterizada y experiencias de violencia.</small></div>
-        </a>
-      </div>
-
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <div class="nav-buttons">
+    <button id="prevBtn" class="btn btn-secondary btn-small">←</button>
+    <button id="nextBtn" class="btn btn-primary btn-small">→</button>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
