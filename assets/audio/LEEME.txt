@@ -1,1 +1,0 @@
-Cuando el audio esté listo, guárdalo en esta carpeta con el nombre podcast.mp3 (formato MP3 real). En GitHub Pages el reproductor lo detectará automáticamente. No es necesario modificar el HTML. La opción de prueba local de la página no publica archivos.
